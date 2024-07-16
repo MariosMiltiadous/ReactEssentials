@@ -21,7 +21,7 @@ function App() {
           <h2>Time to get started!</h2>
           <ul>
             {CORE_CONCEPTS.map((conceptItem)=>{
-              return <CoreConcept {...conceptItem} />
+              return <CoreConcept key={conceptItem.title}  {...conceptItem}/>
             })}
           </ul>
         </section>
